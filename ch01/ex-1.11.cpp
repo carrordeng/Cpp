@@ -13,7 +13,7 @@ int main()
         big = tmp;
     }
 
-    while(small <= big)
+    while (small <= big)
     {
         std::cout << small << " ";
         small++;
