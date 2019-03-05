@@ -36,6 +36,3 @@ launch.json
 *.exe
 *.out
 *.app
-
-# Project specific
-Sales_item.h
