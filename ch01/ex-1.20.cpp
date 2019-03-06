@@ -10,7 +10,7 @@ int main()
         while (std::cin >> item)
         {
             std::cout << item;
-    }
+        }
         return 0;
     }
     else
