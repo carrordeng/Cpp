@@ -4,10 +4,10 @@
 int main()
 {
     Sales_item item;
-    if(std::cin >> item)
+    if (std::cin >> item)
     {
         std::cout << item;
-        while(std::cin >> item)
+        while (std::cin >> item)
         {
             std::cout << item;
         }
