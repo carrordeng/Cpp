@@ -1,4 +1,5 @@
 #include <iostream>
+
 int main()
 {
     int i = 8, *pi = nullptr;
