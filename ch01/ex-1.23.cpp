@@ -17,8 +17,8 @@ int main()
                 cnt = 1;
                 curritem = item;
             }
+            std::cout << "For ISBN " << curritem.isbn() << " transaction occured " << cnt << " times" << std::endl;
         }
-        std::cout << "For ISBN " << curritem.isbn() << " transaction occured " << cnt << " times" << std::endl;
     }
     else
     {
