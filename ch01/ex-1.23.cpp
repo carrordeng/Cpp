@@ -9,7 +9,7 @@ int main()
         int cnt = 1;
         while (std::cin >> item)
         {
-            if(item.isbn() == curritem.isbn())
+            if (item.isbn() == curritem.isbn())
                 cnt++;
             else
             {
