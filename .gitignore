@@ -36,3 +36,6 @@ launch.json
 *.exe
 *.out
 *.app
+
+# Results
+result.txt
