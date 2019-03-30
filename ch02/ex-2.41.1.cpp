@@ -13,5 +13,13 @@ struct Sales_data
 
 int main()
 {
-
+    Sales_data book;
+    std::cin >> book.bookNo >> book.bookName >> book.units_sold >> book.price;
+    book.revenue = book.units_sold * book.price;
+    std::cout << book.bookNo << " "
+              << book.bookName << " "
+              << book.units_sold << " "
+              << book.price << " "
+              << book.revenue << std::endl;
+    return 0;
 }
