@@ -19,11 +19,11 @@ int main()
             }
         }
         std::cout << "For ISBN " << curritem.isbn() << " transaction occured " << cnt << " times" << std::endl;
-        return 0;
     }
     else
     {
         std::cerr << "No input data?" << std::endl;
         return -1;
     }
+    return 0;
 }
