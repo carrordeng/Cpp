@@ -17,22 +17,20 @@ int main()
     book1.revenue = book1.units_sold * book1.price;
     std::cin >> book2.bookNo >> book2.bookName >> book2.units_sold >> book2.price;
     book2.revenue = book2.units_sold * book2.price;
-    if(book1.bookNo == book2.bookNo)
+    if (book1.bookNo == book2.bookNo)
     {
         unsigned int totalcnt = book1.units_sold + book2.units_sold;
         double total_revenue = book1.revenue + book2.revenue;
         std::cout << book1.bookNo << " "
-              << book1.bookName << " "
-              << totalcnt << " "
-              << book1.price << " "
-              << total_revenue << std::endl;
+                  << book1.bookName << " "
+                  << totalcnt << " "
+                  << book1.price << " "
+                  << total_revenue << std::endl;
     }
     else
     {
         std::cerr << "Input data must have same ISBN." << std::endl;
-        system("pause");
         return -1;
     }
-    system("pause");
     return 0;
 }
