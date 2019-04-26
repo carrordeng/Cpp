@@ -1,0 +1,7 @@
+0-201-78345-X Harry-Potter 3 10
+0-201-78345-X Harry-Potter 2 10
+0-201-78346-X Algorithm 1 100
+0-201-78346-X Algorithm 2 100
+0-201-78346-X Algorithm 6 100
+0-201-78347-X Primer 1 60
+0-201-78347-X Primer 2 60
