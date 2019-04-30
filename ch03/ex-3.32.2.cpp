@@ -20,4 +20,5 @@ int main()
     for (auto i : ivec2)
         cout << i << " ";
     cout << endl;
+    return 0;
 }

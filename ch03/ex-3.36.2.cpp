@@ -17,4 +17,5 @@ int main()
          << (ivec1 == ivec3 ? "equal." : "not equal.") << endl;
     cout << "ivec1 and ivec4 are "
          << (ivec1 == ivec4 ? "equal." : "not equal.") << endl;
+    return 0;
 }

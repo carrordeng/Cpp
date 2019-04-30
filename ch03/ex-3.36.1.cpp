@@ -32,4 +32,5 @@ int main()
          << (icompare(begin(ia1), end(ia1), begin(ia3), end(ia3)) ? "equal." : "not equal.") << endl;
     cout << "ia1 and ia4 are "
          << (icompare(begin(ia1), end(ia1), begin(ia4), end(ia4)) ? "equal." : "not equal.") << endl;
+    return 0;
 }
