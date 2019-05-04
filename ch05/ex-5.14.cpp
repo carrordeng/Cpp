@@ -25,7 +25,7 @@ int main()
             currCnt = 1;
         prestr = currstr;
     }
-    if (maxCnt == 1)
+    if (maxCnt == 1 || maxCnt == 0)
         cout << "No word was repeated." << endl;
     else
         cout << "The word " << maxstr << " occurred " << maxCnt << " times." << endl;
