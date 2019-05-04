@@ -44,11 +44,11 @@ int main()
             break;
         }
     }
-    cout << "Number of vowel a: \t" << aCnt << endl
-         << "Number of vowel e: \t" << eCnt << endl
-         << "Number of vowel i: \t" << iCnt << endl
-         << "Number of vowel o: \t" << oCnt << endl
-         << "Number of vowel u: \t" << uCnt << endl
+    cout << "Number of vowel a(A): \t" << aCnt << endl
+         << "Number of vowel e(E): \t" << eCnt << endl
+         << "Number of vowel i(I): \t" << iCnt << endl
+         << "Number of vowel o(O): \t" << oCnt << endl
+         << "Number of vowel u(U): \t" << uCnt << endl
          << "Number of blank spaces: \t" << bsCnt << endl
          << "Number of tabs: \t" << tabCnt << endl
          << "Number of newlines: \t" << nlCnt << endl;
