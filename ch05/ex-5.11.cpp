@@ -9,7 +9,7 @@ int main()
     unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0,
              bsCnt = 0, tabCnt = 0, nlCnt = 0;
     char ch;
-    while (cin >> ch)
+    while (cin >> std::noskipws >> ch)
     {
         switch (ch)
         {
