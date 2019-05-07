@@ -13,9 +13,9 @@ void swap(int *ia, int *ib)
 
 int main()
 {
-  int ia,ib;
-  cin >> ia >>ib;
-  swap(&ia,&ib);
-  cout << ia << ib <<endl;
+  int ia, ib;
+  cin >> ia >> ib;
+  swap(&ia, &ib);
+  cout << ia << ib << endl;
   return 0;
 }
