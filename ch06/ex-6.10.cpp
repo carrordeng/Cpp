@@ -16,6 +16,6 @@ int main()
   int ia, ib;
   cin >> ia >> ib;
   swap(&ia, &ib);
-  cout << ia << ib << endl;
+  cout << ia << " " << ib << endl;
   return 0;
 }
