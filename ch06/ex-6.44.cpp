@@ -12,7 +12,7 @@ inline bool isShorter(const string &s1, const string &s2)
 
 int main()
 {
-    string s1 = "abc", s2 = "abcde";
-    cout << isShorter(s1, s2) << endl;
+    cout << std::boolalpha << isShorter("Hello", "World") << endl;
+    cout << std::boolalpha << isShorter("string", "large_string") << endl;
     return 0;
 }
