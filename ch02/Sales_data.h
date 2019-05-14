@@ -44,6 +44,7 @@ void Sales_data::SetData(Sales_data data)
 {
     bookNo = data.bookNo;
     bookName = data.bookName;
+    units_sold = data.units_sold;
     price = data.price;
     revenue = data.revenue;
 }
