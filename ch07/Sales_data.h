@@ -33,14 +33,14 @@ Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
     return sum.combine(rhs);
 }
 
-std::istream &read(std::istream &is, Sales_data data)
+std::istream &read(std::istream &is, Sales_data &data)
 {
     is >> data.bookNo >> data.bookName >> data.units_sold >> data.price;
     data.calRevenue();
     return is;
 }
 
-std::ostream &print(std::ostream &os, Sales_data data)
+std::ostream &print(std::ostream &os, const Sales_data &data)
 {
     os << data.bookNo << " " << data.bookName << " "
        << data.units_sold << " " << data.price << " " << data.revenue;
