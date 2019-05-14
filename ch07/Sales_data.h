@@ -26,10 +26,11 @@ Sales_data &Sales_data::combine(const Sales_data &data)
 }
 
 //nonmember functions
-Sales_data &add(const Sales_data &lhs, const Sales_data &rhs)
+Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
 {
-    Sales_data data = lhs;
-    return data.combine(rhs);
+    Sales_data sum = lhs;
+    sum.combine(rhs);
+    return sum.combine(rhs);
 }
 
 std::istream &read(std::istream &is, Sales_data data)
