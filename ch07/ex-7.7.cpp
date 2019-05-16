@@ -1,5 +1,5 @@
+#include "./ex-7.6.h"
 #include <iostream>
-#include "./Sales_data.h"
 
 using std::cerr;
 using std::cin;
@@ -14,7 +14,7 @@ int main()
         Sales_data trans;
         while (read(cin, trans))
         {
-            if (total.isbn()== trans.isbn())
+            if (total.isbn() == trans.isbn())
                 total = add(total, trans);
             else
             {
