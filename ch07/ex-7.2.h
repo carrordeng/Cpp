@@ -9,8 +9,8 @@ struct Sales_data
     std::string bookNo;
     std::string bookName;
     unsigned int units_sold;
-    double price = 0.0;
-    double revenue = 0.0;
+    double price;
+    double revenue;
 
     inline void calRevenue() { revenue = units_sold * price; }
     void Print();
