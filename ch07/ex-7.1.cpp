@@ -1,5 +1,5 @@
-#include <iostream>
 #include "../ch02/Sales_data.h"
+#include <iostream>
 
 using std::cerr;
 using std::cin;

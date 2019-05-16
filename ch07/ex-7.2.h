@@ -1,8 +1,8 @@
 #ifndef EX_7_2_H
 #define EX_7_2_H
 
-#include <string>
 #include <iostream>
+#include <string>
 
 struct Sales_data
 {

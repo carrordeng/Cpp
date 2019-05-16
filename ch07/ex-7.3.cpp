@@ -1,5 +1,5 @@
-#include <iostream>
 #include "./ex-7.2.h"
+#include <iostream>
 
 using std::cerr;
 using std::cin;
@@ -21,18 +21,18 @@ int main()
             else
             {
                 cout << total.bookNo << " "
-                          << total.bookName << " "
-                          << total.units_sold << " "
-                          << total.price << " "
-                          << total.revenue << endl;
+                     << total.bookName << " "
+                     << total.units_sold << " "
+                     << total.price << " "
+                     << total.revenue << endl;
                 total = trans;
             }
         }
         cout << total.bookNo << " "
-                  << total.bookName << " "
-                  << total.units_sold << " "
-                  << total.price << " "
-                  << total.revenue << endl;
+             << total.bookName << " "
+             << total.units_sold << " "
+             << total.price << " "
+             << total.revenue << endl;
     }
     else
     {
