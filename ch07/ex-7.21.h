@@ -6,6 +6,9 @@
 
 class Sales_data
 {
+    friend std::istream &read(std::istream &is, Sales_data &data);
+    friend std::ostream &print(std::ostream &os, const Sales_data &data);
+
 private:
     std::string bookNo;
     std::string bookName;
@@ -24,9 +27,6 @@ public:
     inline void calRevenue() { revenue = units_sold * price; }
     std::string isbn() const { return bookNo; }
     Sales_data &combine(const Sales_data &data);
-
-    friend std::istream &read(std::istream &is, Sales_data &data);
-    friend std::ostream &print(std::ostream &os, const Sales_data &data);
 };
 
 //nonmember functions
