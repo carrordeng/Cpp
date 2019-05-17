@@ -6,7 +6,7 @@
 
 class Sales_data
 {
-    private:
+private:
     std::string bookNo;
     std::string bookName;
     unsigned units_sold = 0;
@@ -14,7 +14,7 @@ class Sales_data
     double revenue = 0.0;
 
     //add constructors
-    public:
+public:
     Sales_data() = default;
     Sales_data(const std::string &No, const std::string &Name) : bookNo(No), bookName(Name) {}
     Sales_data(const std::string &No, const std::string &Name, const unsigned &us, const double &p) : bookNo(No), bookName(Name), units_sold(us), price(p) { calRevenue(); }
