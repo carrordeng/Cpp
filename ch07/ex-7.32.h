@@ -14,12 +14,12 @@ private:
 
 public:
     typedef std::vector<Screen>::size_type ScreenIndex;
-    void clear(ScreenIndex);
+    void clear(const ScreenIndex &);
 };
 
 class Screen
 {
-    friend void Window_mgr::clear(ScreenIndex);
+    friend void Window_mgr::clear(const ScreenIndex &);
 
 public:
     typedef std::string::size_type pos;
@@ -44,7 +44,7 @@ public:
     const Screen &display(std::ostream &) const;
 };
 
-inline void Window_mgr::clear(ScreenIndex i)
+inline void Window_mgr::clear(const ScreenIndex &i)
 {
     Screen &s = screens[i];
     s.contents = std::string(s.height * s.width, ' ');
