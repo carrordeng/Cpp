@@ -1,13 +1,13 @@
-#ifndef EX_7_22_H
-#define EX_7_22_H
+#ifndef EX_7_50_H
+#define EX_7_50_H
 
 #include <iostream>
 #include <string>
 
 class Person
 {
-    friend std::istream &read(std::istream &is, Person p);
-    friend std::ostream &print(std::istream &is, const Person p);
+    friend std::istream &read(std::istream &is, Person &p);
+    friend std::ostream &print(std::ostream &os, const Person &p);
 
 private:
     std::string name;
@@ -29,7 +29,7 @@ std::istream &read(std::istream &is, Person &p)
     return is >> p.name >> p.address;
 }
 
-std::ostream &print(std::ostream os, const Person &p)
+std::ostream &print(std::ostream &os, const Person &p)
 {
     return os << p.name << " " << p.address;
 }
