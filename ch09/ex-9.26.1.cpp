@@ -33,4 +33,5 @@ int main()
     for (auto i : ivec)
         cout << i << " ";
     cout << endl;
+    return 0;
 }

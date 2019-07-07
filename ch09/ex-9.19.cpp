@@ -16,4 +16,5 @@ int main()
         slist.push_back(input);
     for (auto it = slist.cbegin(); it != slist.cend(); ++it)
         cout << *it << endl;
+    return 0;
 }

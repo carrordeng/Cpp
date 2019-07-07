@@ -24,4 +24,5 @@ int main()
     for (auto it = odd_que.cbegin(); it != odd_que.cend(); ++it)
         cout << *it << " ";
     cout << endl;
+    return 0;
 }

@@ -37,4 +37,5 @@ int main()
     for (auto str : sflist)
         cout << str << " ";
     cout << endl;
+    return 0;
 }

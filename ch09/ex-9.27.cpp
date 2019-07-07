@@ -20,4 +20,5 @@ int main()
     for (auto i : flst)
         cout << i << " ";
     cout << endl;
+    return 0;
 }

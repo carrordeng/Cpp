@@ -29,4 +29,5 @@ int main()
     insertDoubleValue(iv, 1);
     for (auto i : iv)
         cout << i << " ";
+    return 0;
 }

@@ -16,4 +16,5 @@ int main()
         sque.push_back(input);
     for (auto it = sque.cbegin(); it != sque.cend(); ++it)
         cout << *it << endl;
+    return 0;
 }
