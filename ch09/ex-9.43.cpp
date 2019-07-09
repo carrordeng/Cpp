@@ -1,44 +1,50 @@
 #include <iostream>
 #include <string>
 
-using std::cout;
-using std::endl;
 using std::string;
 
 void Replace(string &s, const string &oldVal, const string &newVal)
 {
-    for (auto s_head = s.begin(); s_head != s.end();)
+    for (auto beg = s.begin(); std::distance(beg, s.end()) >=
+                               std::distance(oldVal.begin(), oldVal.end());)
     {
-        if (*s_head == ' ')
+        if (string{beg, beg + oldVal.size()} == oldVal)
         {
-            ++s_head;
-            continue;
-        }
-        auto s_tail = s_head;
-        auto iterOld = oldVal.begin();
-        while (*s_tail != ' ' && s_tail != s.end() && iterOld != oldVal.end())
-        {
-            if (*s_tail != *iterOld)
-                break;
-            ++s_tail;
-            ++iterOld;
-        }
-        if (iterOld == oldVal.end())
-        {
-            s.erase(s_head, s_tail + 1);
-            s.insert(s_tail, newVal.begin(), newVal.end());
-            s_head = s_tail;
+            beg = s.erase(beg, beg + oldVal.size());
+            beg = s.insert(beg, newVal.cbegin(), newVal.cend());
+            std::advance(beg, newVal.size());
         }
         else
-            ++s_head;
+            ++beg;
     }
 }
 
 int main()
 {
-    string str = "To drive straight thruthru is a foolish, thotho courageous act.";
-    Replace(str, "thru", "through");
-    Replace(str, "thro", "though");
-    cout << str << endl;
+    {
+        string str{"To drive straight thru is a foolish, tho courageous act."};
+        Replace(str, "thru", "through");
+        Replace(str, "tho", "though");
+        std::cout << str << std::endl;
+    }
+    {
+        string str{
+            "To drive straight thruthru is a foolish, thotho courageous act."};
+        Replace(str, "thru", "through");
+        Replace(str, "tho", "though");
+        std::cout << str << std::endl;
+    }
+    {
+        string str{"To drive straight thru is a foolish, tho courageous act."};
+        Replace(str, "thru", "thruthru");
+        Replace(str, "tho", "though");
+        std::cout << str << std::endl;
+    }
+    {
+        string str{"my world is a big world"};
+        Replace(str, "world",
+                "worldddddddddddddddddddddddddddddddddddddddddddddddd");
+        std::cout << str << std::endl;
+    }
     return 0;
 }
